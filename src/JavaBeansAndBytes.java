@@ -48,10 +48,14 @@ public class JavaBeansAndBytes {
         // Create two CoffeeDrink objects
         CoffeeDrink coffee1 = new CoffeeDrink(2, "Caramel", true);
         CoffeeDrink coffee2 = new CoffeeDrink(1, "Vanilla", false);
+
+        coffee1.setFlavor("water");
         // TODO
         // Print out the order details
         coffee1.printInfo();
         coffee2.printInfo();
+        String newSpecial = coffee2.getFlavor();
+        specialOfTheDay(newSpecial);
 
 
     }
