@@ -50,6 +50,10 @@ public class JavaBeansAndBytes {
         CoffeeDrink coffee2 = new CoffeeDrink(1, "Vanilla", false);
 
         coffee1.setFlavor("water");
+
+        coffee2.setFlavor("Matcha");
+        coffee2.setNumberOfCups(5);
+        coffee2.setHasWhippedCream(true);
         // TODO
         // Print out the order details
         coffee1.printInfo();

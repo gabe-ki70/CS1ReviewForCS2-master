@@ -35,4 +35,18 @@ class CoffeeDrink {
     public String getFlavor(){
         return flavor;
     }
+
+    public void setNumberOfCups(int newNumberOfCups){
+        numberOfCups = newNumberOfCups;
+    }
+    public int getNumberOfCups(){
+        return numberOfCups;
+    }
+
+    public void setHasWhippedCream(boolean newHasWhippedCream){
+        hasWhippedCream = newHasWhippedCream;
+    }
+    public boolean getHasWhippedCream(){
+        return hasWhippedCream;
+    }
 }
