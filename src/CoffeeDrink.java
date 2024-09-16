@@ -17,6 +17,11 @@ class CoffeeDrink {
         this.hasWhippedCream = hasWhippedCream;
 
     }
+    public CoffeeDrink(){
+        numberOfCups = 6;
+        flavor = "hazelnut";
+        hasWhippedCream = true;
+    }
 
     // Method to print information about the CoffeeDrink
     public void printInfo() {

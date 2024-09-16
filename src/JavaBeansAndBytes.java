@@ -60,18 +60,32 @@ public class JavaBeansAndBytes {
         coffee2.printInfo();
         String newSpecial = coffee2.getFlavor();
         specialOfTheDay(newSpecial);
-
+        int i = 0;
+        while(i<10){
+            CoffeeDrink randomdrink = new CoffeeDrink((int)(Math.random()*100), "Chai", true );
+            if(randomdrink.getNumberOfCups()>75){
+                System.out.println("Too many cups order somewhere else");
+                break;
+            }
+            else{
+                randomdrink.printInfo();
+            }
+            i++;
+        }
+        randomDiscount();
+    }
+    public void randomDiscount(){
+        int x = (int)(Math.random()*31);
+        System.out.println("You have received a " + x + "% discount today");
+       while(x<20){
+           System.out.println("discount too low, Trying again");
+           x = (int)(Math.random()*31);
+       }
 
     }
 
     // Method to generate a random discount
-    public void randomDiscount() {
-        // TODO
-        // Make this method generate a random integer discount (0-30%)
-        // and print the result.
-        int discount = (int)(Math.random()*31);
-        System.out.println("You have received a " + discount + "% discount today");
-    }
+
 
     // Method with a parameter for the special of the day
     public void specialOfTheDay(String special) {
